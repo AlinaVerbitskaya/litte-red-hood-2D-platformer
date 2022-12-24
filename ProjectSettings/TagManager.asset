@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - DeathTrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Solid_Object
+  - Ground
+  - Enemy
+  - GroundCollider
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1870044885
+    locked: 0
+  - name: Foliage
+    uniqueID: 1298050961
+    locked: 0
+  - name: Ground
+    uniqueID: 3970912653
+    locked: 0
+  - name: Objects
+    uniqueID: 1889140173
+    locked: 0
+  - name: Enemy
+    uniqueID: 609725913
+    locked: 0
+  - name: Player
+    uniqueID: 3650549913
+    locked: 0
+  - name: Water
+    uniqueID: 662470939
+    locked: 0
+  - name: Effects
+    uniqueID: 1316027963
+    locked: 0
+  - name: Foreground
+    uniqueID: 3992212773
+    locked: 0
+  - name: UI
+    uniqueID: 3326176175
+    locked: 0
