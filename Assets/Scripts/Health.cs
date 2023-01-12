@@ -44,17 +44,22 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DamageCkeck(collision.gameObject);
+        DamageCheck(collision.gameObject);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        DamageCkeck(collision.gameObject);
+        DamageCheck(collision.gameObject);
     }
 
-    private void DamageCkeck(GameObject source)
+    private void DamageCheck(GameObject source)
     {
         DamageDealer dd = source.GetComponent<DamageDealer>();
+        bool healing = (dd != null) && (dd.damage < 0) && dd.IsInLayerMask(gameObject, dd.damageLayerMask);
+        if (healing)
+        {
+            ChangeHealth(-dd.damage);
+        }
         bool damaging = (dd != null) && (dd.damage > 0) && !IsInvincible() && dd.IsInLayerMask(gameObject, dd.damageLayerMask);
         if (damaging)
         {

@@ -7,5 +7,6 @@ using UnityEngine;
 public static class EventManager
 {
     public static Action OnPlayerDeath;
+    public static Action OnCoinCollected;
 }
 
