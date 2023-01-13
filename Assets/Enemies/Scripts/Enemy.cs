@@ -41,6 +41,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void DeathTriggerReact()
+    {
+        enemyHealth.ChangeHealth(-enemyHealth.CurrentHealth);
+    }
+
     private void Death()
     {
         enemyAnimator.SetInteger("AnimationState", (int)EnemyAnimationState.death);

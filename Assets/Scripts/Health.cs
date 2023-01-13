@@ -9,9 +9,9 @@ public class Health : MonoBehaviour
 
     [SerializeField] private int m_currentHealth = 100, maxHealth = 100;
     [SerializeField] private Slider HealthSlider;
-
     public bool invincible = false;
-    private int CurrentHealth { 
+
+    public int CurrentHealth { 
         get
         {
             return m_currentHealth;
@@ -68,6 +68,10 @@ public class Health : MonoBehaviour
             {
                 SendMessage("HitReact", source.transform, SendMessageOptions.DontRequireReceiver);
             }
+        }
+        if (source.CompareTag("DeathTrigger"))
+        {
+            SendMessage("DeathTriggerReact", SendMessageOptions.DontRequireReceiver);
         }
     }
 

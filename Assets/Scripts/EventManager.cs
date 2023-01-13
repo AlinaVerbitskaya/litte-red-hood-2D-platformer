@@ -8,5 +8,7 @@ public static class EventManager
 {
     public static Action OnPlayerDeath;
     public static Action OnCoinCollected;
+    public static Action OnPlayerInDeathTrigger;
+    public static Action<Checkpoint> OnCheckpointActivated;
 }
 

@@ -95,4 +95,17 @@ public class PlayerManager : MonoBehaviour
         plHealth.invincible = true;
         plAnimations.UpdateAnimationState(PlayerAnimations.PlayerAnimationState.dead);
     }
+
+    public void Teleport(Vector3 position)
+    {
+        if (plHealth.CurrentHealth > 0)
+        {
+            GetComponent<Transform>().position = position;
+        }
+    }
+
+    private void DeathTriggerReact()
+    {
+        EventManager.OnPlayerInDeathTrigger?.Invoke();
+    }
 }
