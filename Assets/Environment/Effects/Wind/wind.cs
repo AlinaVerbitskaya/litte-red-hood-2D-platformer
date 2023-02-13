@@ -10,7 +10,6 @@ public class wind : MonoBehaviour
     [SerializeField] private float force = 10f;
     [SerializeField] private float windTimer = 1f;
     [SerializeField] private float restTimer = 2f;
-    private bool active = false;
 
     private void OnEnable()
     {
@@ -35,7 +34,6 @@ public class wind : MonoBehaviour
 
     public IEnumerator Activate()
     {
-        active = true;
         particles.Play();
         for (float i = 0; i < 1f; i += Time.deltaTime)
         {
@@ -46,7 +44,6 @@ public class wind : MonoBehaviour
 
     public IEnumerator Deactivate()
     {
-        active = false;
         particles.Stop();
         for (float i = 1; i > 0f; i -= Time.deltaTime)
         {

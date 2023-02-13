@@ -5,19 +5,26 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public enum Direction { left = -1, right = 1 };
-    public enum EnemyAnimationState { idle = 0, run = 1, hurt = 2, death = 3 };
+    public enum EnemyAnimationState { idle = 0, run = 1, hurt = 2, death = 3, attack = 4 };
 
-    [SerializeField] private SpriteRenderer enemySpriteRenderer;
-    [SerializeField] private Animator enemyAnimator;
-    [SerializeField] private Rigidbody2D enemyRB;
-    [SerializeField] private Health enemyHealth;
+    [SerializeField] protected SpriteRenderer enemySpriteRenderer;
+    [SerializeField] protected Animator enemyAnimator;
+    [SerializeField] protected Rigidbody2D enemyRB;
+    [SerializeField] protected Health enemyHealth;
+    [SerializeField] protected Collider2D damagingCollider;
 
-    private void LateUpdate()
+    protected void LateUpdate()
     {
         CalculateEnemyState();
+        //AnimationUpdate();
     }
 
-    private void CalculateEnemyState()
+    protected void AnimationUpdate()
+    {
+        //enemyAnimator.SetInteger("AnimationState", (int)currentState);
+    }
+
+    protected virtual void CalculateEnemyState()
     {
         if (enemyRB.velocity.magnitude < 0.5f)
         {
@@ -25,7 +32,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void HitReact(Transform obj)
+    protected void HitReact(Transform obj)
     {
         enemyAnimator.SetInteger("AnimationState", (int)EnemyAnimationState.hurt);
         Vector2 dir = new Vector2(Mathf.Sign(gameObject.transform.position.x - obj.position.x), 1);
@@ -41,15 +48,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void DeathTriggerReact()
+    protected void DeathTriggerReact()
     {
         enemyHealth.ChangeHealth(-enemyHealth.CurrentHealth);
     }
 
-    private void Death()
+    protected void Death()
     {
+        enemyRB.bodyType = RigidbodyType2D.Kinematic;
         enemyAnimator.SetInteger("AnimationState", (int)EnemyAnimationState.death);
         enemyHealth.invincible = true;
+        if (damagingCollider != null) damagingCollider.enabled = false;
         Destroy(gameObject, 2.5f);
     }
 }

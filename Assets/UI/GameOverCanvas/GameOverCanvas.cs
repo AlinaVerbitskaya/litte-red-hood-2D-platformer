@@ -19,6 +19,11 @@ public class GameOverCanvas : MonoBehaviour
         EventManager.OnPlayerDeath += Activate;
     }
 
+    private void OnDestroy()
+    {
+        EventManager.OnPlayerDeath -= Activate;
+    }
+
     private void Activate()
     {
         StartCoroutine(ReloadSceneOnKeyPress());
