@@ -7,16 +7,16 @@ public class EnemySentient : Enemy
 {
     [Header("Target")]
     [SerializeField] protected LayerMask targetLayerMask;
-    private protected Transform playerTransform;
+    protected Transform playerTransform;
 
     [Header("Patrol")]
     [SerializeField] protected Direction patrolDir = Direction.left;
     [SerializeField, Range(0.01f, 20f)] protected float speed = 2f;
     [SerializeField] protected LayerMask patrolLimiter;
-    [SerializeField] private float restTimer = 2f;
-    private float currentRestTimer = 2f;
+    [SerializeField, Range(0.01f, 20f)] protected float restTimer = 2f;
+    protected float currentRestTimer = 2f;
 
-    private EnemyAnimationState currentState;
+    protected EnemyAnimationState currentState;
 
     private void OnEnable()
     {
@@ -36,7 +36,7 @@ public class EnemySentient : Enemy
         }
     }
 
-    protected void Patrol()
+    protected virtual void Patrol()
     {
         switch (currentState)
         {

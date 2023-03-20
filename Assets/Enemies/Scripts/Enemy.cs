@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    protected void HitReact(Transform obj)
+    protected virtual void HitReact(Transform obj)
     {
         enemyAnimator.SetInteger("AnimationState", (int)EnemyAnimationState.hurt);
         Vector2 dir = new Vector2(Mathf.Sign(gameObject.transform.position.x - obj.position.x), 1);

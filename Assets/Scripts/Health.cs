@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
         set
         {
             m_currentHealth = value;
-            HealthSlider.value = (float)m_currentHealth / maxHealth;
+            if (HealthSlider != null) HealthSlider.value = (float)m_currentHealth / maxHealth;
             if (m_currentHealth > maxHealth)
             {
                 m_currentHealth = maxHealth;
@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        HealthSlider.value = (float)CurrentHealth / maxHealth;
+        if (HealthSlider != null) HealthSlider.value = (float)CurrentHealth / maxHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

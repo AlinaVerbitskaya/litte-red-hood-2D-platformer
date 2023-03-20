@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] private GameObject projectisle;
+    [SerializeField] private GameObject projectile;
     [SerializeField, Range(0f, 20f)] private float force = 4f;
 
     public void Shoot(Vector2 direction, Vector3 point)
     {
-        GameObject obj = Instantiate(projectisle, point, Quaternion.Euler(0, 0, 0));
+        GameObject obj = Instantiate(projectile, point, Quaternion.Euler(0, 0, 0));
         obj.transform.SetParent(gameObject.transform, true);
         if (direction.x < 0)
         {
