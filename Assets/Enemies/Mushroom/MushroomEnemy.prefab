@@ -5048,7 +5048,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.003145059, y: 0.19}
@@ -5066,7 +5066,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.11143753
+  m_Mass: 0.55282736
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2.5
@@ -5104,8 +5104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f18b065c55bf542b7471dc1e1e5e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_currentHealth: 100
-  maxHealth: 20
+  m_currentHealth: 15
+  maxHealth: 15
   HealthSlider: {fileID: 9135071438006143659}
   invincible: 0
 --- !u!1 &5305311357209006425

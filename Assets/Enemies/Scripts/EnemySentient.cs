@@ -66,11 +66,12 @@ public class EnemySentient : Enemy
                 currentState = EnemyAnimationState.idle;
                 break;
             case EnemyAnimationState.attack:
+                enemyRB.velocity = new Vector2(0, enemyRB.velocity.y);
                 currentRestTimer = restTimer;
                 currentState = EnemyAnimationState.idle;
                 break;
             case EnemyAnimationState.death:
-                enemyRB.velocity = new Vector2(0, enemyRB.velocity.y);
+                enemyRB.bodyType = RigidbodyType2D.Kinematic;
                 break;
             default: break;
         }
