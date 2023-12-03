@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_currentHealth: 30
-  maxHealth: 20
+  maxHealth: 30
   HealthSlider: {fileID: 9105247507348036720}
   invincible: 0
 --- !u!70 &469555932296083616

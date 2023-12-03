@@ -329,7 +329,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 7.3350005, y: -4.3093996}
+  m_ConnectedAnchor: {x: 47.41278, y: -1.2993997}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -813,6 +813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895953043197161481}
+  - component: {fileID: 8882581207851678447}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -839,6 +840,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8882581207851678447
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895953043197161480}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9e660465ed21774abc3dddbf0cc425a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.6569698, y: 7.24967}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26653814, y: 8.411194}
+  m_EdgeRadius: 0
 --- !u!1 &895953043679698118
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,11 +980,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0007450059
+      value: 0.0007448904
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.04012119
+      value: -0.0401214
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -1080,11 +1107,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 8.787293
+      value: 48.865074
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.61290216
+      value: 2.3970978
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_AutoConfigureConnectedAnchor
@@ -1195,11 +1222,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0006513279
+      value: -0.00065117143
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.045451082
+      value: -0.045450896
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -1224,6 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ddf45c32fe783c43a2b5c46b0ff04a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invisibleWall: {fileID: 8882581207851678447}
 --- !u!114 &8988131648219121111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,11 +1355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.00073801354
+      value: 0.0007381886
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.04451178
+      value: -0.044511467
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -1426,11 +1454,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.0005691163
+      value: -0.00056940876
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.04377607
+      value: -0.043776587
       objectReference: {fileID: 0}
     - target: {fileID: 9078318806300125182, guid: ef16cde933040c649b9b113a35267547, type: 3}
       propertyPath: m_ConnectedRigidBody
@@ -1457,16 +1485,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264268300201906742, guid: 0c8655f807bdef94d89a91d1b2f93768, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.00047974475
+      value: 0.00047996826
       objectReference: {fileID: 0}
     - target: {fileID: 1264268300201906742, guid: 0c8655f807bdef94d89a91d1b2f93768, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.04293185
+      value: -0.042931426
       objectReference: {fileID: 0}
     - target: {fileID: 1264268300201906742, guid: 0c8655f807bdef94d89a91d1b2f93768, type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 7120752122117913835}
+    - target: {fileID: 2300331088845764593, guid: 0c8655f807bdef94d89a91d1b2f93768, type: 3}
+      propertyPath: invisibleWall
+      value: 
+      objectReference: {fileID: 8882581207851678447}
     - target: {fileID: 5572472820734532645, guid: 0c8655f807bdef94d89a91d1b2f93768, type: 3}
       propertyPath: m_Enabled
       value: 1

@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
 
     protected void Death()
     {
-        enemyRB.bodyType = RigidbodyType2D.Kinematic;
+        enemyRB.bodyType = RigidbodyType2D.Static;
         enemyAnimator.SetInteger("AnimationState", (int)EnemyAnimationState.death);
         enemyHealth.invincible = true;
         if (damagingCollider != null) damagingCollider.enabled = false;

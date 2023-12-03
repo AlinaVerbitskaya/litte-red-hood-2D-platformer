@@ -2472,6 +2472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479822239}
     m_Modifications:
+    - target: {fileID: 694398905, guid: 9748b4b2745ad5a4f8efc1601c3c7ceb, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1683948557}
     - target: {fileID: 1278009301, guid: 9748b4b2745ad5a4f8efc1601c3c7ceb, type: 3}
       propertyPath: coinCountUI
       value: 
@@ -17220,6 +17224,11 @@ Transform:
   m_Father: {fileID: 1309344129}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1683948557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1070942432963095484, guid: 9748b4b2745ad5a4f8efc1601c3c7ceb, type: 3}
+  m_PrefabInstance: {fileID: 282408228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1694975252
 GameObject:
   m_ObjectHideFlags: 0

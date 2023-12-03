@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 0.30599254
   m_LinearDrag: 0
   m_AngularDrag: 3.35
   m_GravityScale: 1
@@ -138,6 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageLayerMask:
     serializedVersion: 2
-    m_Bits: 512
-  damage: 5
-  oneTimeHit: 1
+    m_Bits: 1664
+  damage: 13

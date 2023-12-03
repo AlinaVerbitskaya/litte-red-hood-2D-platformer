@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f54508fa0e5e4c458e0ca7e9f6a4a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_coinCount: 10
+  m_coinCount: 0
   coinCountUI: {fileID: 0}
 --- !u!1 &1856976066
 GameObject:
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d80f0c17f638249b8b6cfc3c7dee09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectisle: {fileID: 1070942432963095484}
+  projectile: {fileID: 1070942432963095484}
   force: 16.5
 --- !u!1 &9173086674191299897
 GameObject:
@@ -385,7 +385,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.35263634
+  m_Mass: 0.34909737
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2.5
@@ -403,12 +403,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 9173086674234849432}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f9e660465ed21774abc3dddbf0cc425a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00678583, y: 0.1495111}
-  m_Size: {x: 0.12026318, y: 0.2887807}
+  m_Offset: {x: -0.00678583, y: 0.15114594}
+  m_Size: {x: 0.12026318, y: 0.28551102}
   m_Direction: 0
 --- !u!114 &9173086674836369365
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f18b065c55bf542b7471dc1e1e5e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_currentHealth: 32
+  m_currentHealth: 100
   maxHealth: 100
   HealthSlider: {fileID: 0}
   invincible: 0
